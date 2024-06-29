@@ -1,0 +1,12 @@
+#!/bin/bash
+
+[Unit]
+Description=Servo rotation
+
+[Service]
+Type=simple
+ExecStart=bash /home/pi/dev/servo-loop/servo_start.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target
